@@ -1,8 +1,4 @@
-import React from 'react'
-import { renderToString } from 'react-dom/server'
-import Page from './src/Page'
-import { writeFileSync } from 'fs'
+import { render } from './src/util/render'
+import { pages } from './src/config/pages'
 
-const str = renderToString(<Page />)
-
-writeFileSync('./docs/index.html', `<!DOCTYPE html>${str}`)
+pages.forEach(page => render(page))

@@ -11,6 +11,7 @@ export const addScrollListener = () => {
             attachScrollEffect('row4', { start: 66.67 })
             attachScrollEffect('row5', { start: -333.33, goingRight: true })
             attachScrollEffect('row6', { start: 33.33 })
+            handleNavScroll()
         }
     })
 }
@@ -34,17 +35,17 @@ const attachScrollEffect = (
     element.style.left = `${currentLeft}%`
 }
 
-// const handleNavScroll = () => {
-//     const nav = document.getElementById('nav')
-//     if (!nav) return
-//     const navstyle = getComputedStyle(nav)
-//     if (window.scrollY >= 160) {
-//         if (navstyle.top === '-100px') {
-//             nav.style.top = '0px'
-//         }
-//     } else {
-//         if (navstyle.top === '0px') {
-//             nav.style.top = '-100px'
-//         }
-//     }
-// }
+const handleNavScroll = () => {
+    const nav = document.getElementById('nav')
+    if (!nav) return
+    const navStyle = getComputedStyle(nav)
+    if (window.scrollY >= 160) {
+        if (navStyle.top === '-100px') {
+            nav.style.top = '0px'
+        }
+    } else {
+        if (navStyle.top === '0px') {
+            nav.style.top = '-100px'
+        }
+    }
+}

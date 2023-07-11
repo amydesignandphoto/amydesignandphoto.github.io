@@ -10,10 +10,14 @@ const BlackLetterRow = ({ rowId, count = 4 }: BlackLetterRowProps) => {
     return (
         <div className={`black-letters ${rowId}`} id={rowId}>
             {arr.map(() => (
-                <img className="black-letter-child" src="assets/Amy Design and Photo_black.png" />
+                <BlackLetter />
             ))}
         </div>
     )
 }
+
+const BlackLetter = () => (
+    <img className="black-letter-child" src="assets/Amy Design and Photo_black.png" />
+)
 
 export default BlackLetterRow

@@ -1,33 +1,20 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import Head from './Head'
-import BlackLetterRow from './BlackLetterRow'
-import PinkLogo from './PinkLogo'
 import AnimatedLetters from './AnimatedLetters'
+import Nav from './Nav'
 
-const Page = () => {
-    return (
-        <html>
-            <Head />
-            <body id="BODY">
-                <div className="nav" id="nav">
-                    <div className="nav-closed">
-                        <img className="pink-logo-no-text" src="assets/pink-amy-no-title.svg" />
-                        <button onClick={() => {}}>
-                            <span className="material-icons md-48" id="hamburger">
-                                menu
-                            </span>
-                        </button>
-                    </div>
-                    <div className="menu" id="menu">
-                        <div className="menuitem">Home</div>
-                        <div className="menuitem">About Me</div>
-                        <div className="menuitem">Page 1</div>
-                    </div>
-                </div>
-                <AnimatedLetters />
-            </body>
-        </html>
-    )
+type PageProps = {
+    children: ReactNode
 }
+
+const Page = ({ children }: PageProps) => (
+    <html>
+        <Head />
+        <body>
+            {children}
+            <script src="index.js" />
+        </body>
+    </html>
+)
 
 export default Page
