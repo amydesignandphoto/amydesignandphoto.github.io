@@ -25,7 +25,7 @@ const react = {
 const script = {
     mode: 'production',
     target: 'node',
-    entry: './src/script.ts',
+    entry: './src/scripts/index.ts',
     output: {
         path: path.resolve(__dirname, 'docs'),
         filename: 'index.js',
