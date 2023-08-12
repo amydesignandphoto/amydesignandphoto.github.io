@@ -1,7 +1,7 @@
 import React from 'react'
-import Page from '../Page'
-import Nav from '../Nav'
-import AnimatedLetters from '../AnimatedLetters'
+import Page from '../components/Page'
+import Nav from '../components/Nav'
+import AnimatedLetters from '../components/AnimatedLetters'
 
 const HomePage = () => (
     <Page>

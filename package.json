@@ -6,6 +6,8 @@
     "scripts": {
         "build": "webpack && node ./build/exe.js",
         "fix": "prettier --write --config ./.prettierrc .",
+        "start": "live-server ./docs/",
+        "css": "sass --no-source-map ./src/index.scss ./docs/index.css",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
@@ -13,9 +15,13 @@
     "devDependencies": {
         "@types/react": "^18.2.14",
         "@types/react-dom": "^18.2.6",
+        "css-loader": "^6.8.1",
         "prettier": "^3.0.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "sass-loader": "^13.3.2",
+        "scss": "^0.2.4",
+        "style-loader": "^3.3.3",
         "ts-loader": "^9.4.4",
         "typescript": "^5.1.6",
         "webpack": "^5.88.1",

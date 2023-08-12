@@ -1,5 +1,5 @@
 import React from 'react'
-import { pages } from './config/pages'
+import { pages } from '../config/pages'
 
 const Menu = () => (
     <div className="menu" id="menu">

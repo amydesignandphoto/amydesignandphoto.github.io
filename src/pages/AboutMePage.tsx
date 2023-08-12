@@ -1,6 +1,6 @@
 import React from 'react'
-import Page from '../Page'
-import Nav from '../Nav'
+import Page from '../components/Page'
+import Nav from '../components/Nav'
 
 const AboutMePage = () => (
     <Page>

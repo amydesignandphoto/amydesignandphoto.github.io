@@ -36,16 +36,16 @@ const attachScrollEffect = (
 }
 
 const handleNavScroll = () => {
-    const nav = document.getElementById('nav')
-    if (!nav) return
-    const navStyle = getComputedStyle(nav)
-    if (window.scrollY >= 160) {
-        if (navStyle.top === '-100px') {
-            nav.style.top = '0px'
-        }
-    } else {
-        if (navStyle.top === '0px') {
-            nav.style.top = '-100px'
-        }
-    }
+    // const nav = document.getElementById('nav')
+    // if (!nav) return
+    // const navStyle = getComputedStyle(nav)
+    // if (window.scrollY >= 160) {
+    //     if (navStyle.top === '-100px') {
+    //         nav.style.top = '0px'
+    //     }
+    // } else {
+    //     if (navStyle.top === '0px') {
+    //         nav.style.top = '-100px'
+    //     }
+    // }
 }
