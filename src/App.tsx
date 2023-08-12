@@ -1,12 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
+import MainLogos from './components/MainLogos'
 
-const Thing = styled.div`
-    color: red;
-`
-
-const App = () => {
-    return <Thing>yay</Thing>
-}
+const App = () => (
+    <>
+        <MainLogos />
+    </>
+)
 
 export default App
