@@ -26,7 +26,7 @@ const Text = styled.div`
     line-height: 8vw;
 `
 
-type FullImageLinkProps = {
+export type FullImageLinkProps = {
     img: string
     text: string
 }
@@ -34,7 +34,7 @@ type FullImageLinkProps = {
 const FullImageLink = ({ img, text }: FullImageLinkProps) => {
     return (
         <Container>
-            <Image src={img} />
+            <Image src={`assets/${img}`} />
             <Text>{text}</Text>
         </Container>
     )
