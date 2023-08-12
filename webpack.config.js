@@ -2,11 +2,11 @@ const path = require('path')
 
 const react = {
     mode: 'production',
-    target: 'node',
-    entry: './index.tsx',
+    target: 'web',
+    entry: './src/index.tsx',
     output: {
-        path: path.resolve(__dirname, 'build'),
-        filename: 'exe.js',
+        path: path.resolve(__dirname, 'docs'),
+        filename: 'index.js',
     },
     module: {
         rules: [
@@ -33,26 +33,4 @@ const react = {
     },
 }
 
-const script = {
-    mode: 'production',
-    target: 'node',
-    entry: './src/scripts/index.ts',
-    output: {
-        path: path.resolve(__dirname, 'docs'),
-        filename: 'index.js',
-    },
-    module: {
-        rules: [
-            {
-                test: /\.ts?$/,
-                use: 'ts-loader',
-                exclude: /node_modules/,
-            },
-        ],
-    },
-    resolve: {
-        extensions: ['.ts', '.js'],
-    },
-}
-
-module.exports = [react, script]
+module.exports = [react]
