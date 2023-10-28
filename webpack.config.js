@@ -2,9 +2,13 @@ const { readFileSync, writeFile, writeFileSync } = require('fs')
 const path = require('path')
 
 const template = readFileSync('template.html').toString()
-const config = JSON.parse(readFileSync('./config.json').toString())
-const pages = config.pages.map(page => {
-    const injectedTemplate = template.replace('// GLOBALS', `const PAGE_ID = '${page.id}';`)
+const configFile = readFileSync('./config.json').toString()
+const config = JSON.parse(configFile)
+config.pages.map(page => {
+    const injectedTemplate = template.replace(
+        '// GLOBALS',
+        `const PAGE_ID = '${page.id}'; const config = ${JSON.stringify(config)};`
+    )
     writeFileSync(`./docs/${page.id}.html`, injectedTemplate)
 })
 

@@ -11,7 +11,8 @@ const App = () => {
                 <MainMenuImageLinks />
             </>
         )
-    else return <Page />
+    // @ts-ignore
+    else return <Page pages={config.pages} />
 }
 
 export default App
