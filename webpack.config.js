@@ -1,4 +1,12 @@
+const { readFileSync, writeFile, writeFileSync } = require('fs')
 const path = require('path')
+
+const template = readFileSync('template.html').toString()
+const config = JSON.parse(readFileSync('./config.json').toString())
+const pages = config.pages.map(page => {
+    const injectedTemplate = template.replace('// GLOBALS', `const PAGE_ID = '${page.id}';`)
+    writeFileSync(`./docs/${page.id}.html`, injectedTemplate)
+})
 
 const react = {
     mode: 'production',
