@@ -7,7 +7,8 @@ const config = JSON.parse(configFile)
 config.pages.map(page => {
     const injectedTemplate = template.replace(
         '// GLOBALS',
-        `const PAGE_ID = '${page.id}'; const config = ${JSON.stringify(config)};`
+        `const PAGE_ID = '${page.id}'; 
+const config = ${JSON.stringify(config)};`
     )
     writeFileSync(`./docs/${page.id}.html`, injectedTemplate)
 })

@@ -4,6 +4,8 @@ import MainMenuImageLinks from './components/MainMenuImageLinks'
 import Page from './Page'
 
 const App = () => {
+    const page = config.pages.find(p => p.id === PAGE_ID)
+    const ids = config.pages.map(p => p.id)
     if (PAGE_ID === 'home')
         return (
             <>
@@ -11,8 +13,7 @@ const App = () => {
                 <MainMenuImageLinks />
             </>
         )
-    // @ts-ignore
-    else return <Page pages={config.pages} />
+    else return <Page ids={ids} page={page} />
 }
 
 export default App

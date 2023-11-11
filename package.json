@@ -8,8 +8,7 @@
         "build:watch": "webpack --watch",
         "fix": "prettier --write --config ./.prettierrc .",
         "start": "live-server ./docs/",
-        "css": "sass --no-source-map ./src/index.scss ./docs/index.css",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "css": "sass --no-source-map ./src/index.scss ./docs/index.css"
     },
     "author": "",
     "license": "ISC",
