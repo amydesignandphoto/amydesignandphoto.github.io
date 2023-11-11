@@ -10,11 +10,6 @@
             "images": ["uvu/seats.jpg", "uvu/focused-seats.jpg"]
         },
         {
-            "id": "other",
-            "title": "My Other site",
-            "images": ["uvu/seats.jpg", "uvu/focused-seats.jpg"]
-        },
-        {
             "id": "other-thing",
             "title": "My Other site",
             "images": ["uvu/seats.jpg", "uvu/focused-seats.jpg"]
