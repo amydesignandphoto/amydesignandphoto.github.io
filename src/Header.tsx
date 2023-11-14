@@ -53,11 +53,7 @@ const Icon = styled.button`
     margin-right: 1.5rem;
 `;
 
-type HeaderProps = {
-    ids: string[];
-};
-
-const Header = ({ ids }: HeaderProps) => {
+const Header = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     useEffect(() => {
         const listener = () => {
@@ -80,6 +76,9 @@ const Header = ({ ids }: HeaderProps) => {
                 <DropDownMenu>
                     <MenuItem href={`index.html`} isLast={false}>
                         Home
+                    </MenuItem>
+                    <MenuItem href={`about.html`} isLast={false}>
+                        About
                     </MenuItem>
                     {config.pages.map((page, index) => (
                         <MenuItem

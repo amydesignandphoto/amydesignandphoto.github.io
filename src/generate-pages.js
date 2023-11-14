@@ -35,13 +35,19 @@ fs.readdirSync(OUTPUT_DIR_PATH).map((item) => {
 });
 
 // after Error checks and cleaning up the html files
-// generate a new home or index.html
+// generate a new home page as index.html and an about page.
+const aboutTemplate = template.replace(
+    TEMPLATE_REPLACEABLE_STRING,
+    generateTemplateToReplace("about")
+);
+
 const homeTemplate = template.replace(
     TEMPLATE_REPLACEABLE_STRING,
     generateTemplateToReplace("home")
 );
-fs.writeFileSync(`${OUTPUT_DIR_PATH}/index.html`, homeTemplate);
 
+fs.writeFileSync(`${OUTPUT_DIR_PATH}/index.html`, homeTemplate);
+fs.writeFileSync(`${OUTPUT_DIR_PATH}/about.html`, aboutTemplate);
 // template to replace
 function generateTemplateToReplace(pageId) {
     // add pageId and the config to the page as a variable and an object

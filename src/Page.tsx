@@ -1,12 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import Header from "./Header";
-
-const Container = styled.div.attrs({ id: "Page" })`
-    display: relative;
-`;
-
-const PageContent = styled.div.attrs({ id: "PageContent" })``;
+import PageBase from "./PageBase";
 
 const TextContent = styled.div.attrs({ id: "TextContent" })`
     margin: 1.5rem;
@@ -40,30 +34,26 @@ const Image = styled.img`
 `;
 
 type PageProps = {
-    ids: string[];
     page: PageConfig;
 };
 
-const Page = ({ ids, page }: PageProps) => {
+const Page = ({ page }: PageProps) => {
     return (
-        <Container>
-            <Header ids={ids} />
-            <PageContent>
-                <TextContent>
-                    <Title>{page.title}</Title>
-                    <div>
-                        {page.paragraphs.map((par) => (
-                            <Paragraph>{par}</Paragraph>
-                        ))}
-                    </div>
-                </TextContent>
+        <PageBase>
+            <TextContent>
+                <Title>{page.title}</Title>
                 <div>
-                    {page.images.map((i) => (
-                        <Image src={"assets/" + i} />
+                    {page.paragraphs.map((par) => (
+                        <Paragraph>{par}</Paragraph>
                     ))}
                 </div>
-            </PageContent>
-        </Container>
+            </TextContent>
+            <div>
+                {page.images.map((i) => (
+                    <Image src={"assets/" + i} />
+                ))}
+            </div>
+        </PageBase>
     );
 };
 
