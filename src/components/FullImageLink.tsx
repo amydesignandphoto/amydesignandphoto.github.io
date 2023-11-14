@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
     display: flex;
@@ -7,15 +7,15 @@ const Container = styled.div`
     align-items: stretch;
     width: 100vw;
     margin-bottom: 5vw;
-`
+`;
 
 const Image = styled.img`
     width: 100vw;
     max-height: 100vw;
     object-fit: cover;
-`
+`;
 
-const Text = styled.div`
+const Text = styled.a`
     box-sizing: border-box;
     background-color: #002fa7;
     color: white;
@@ -24,20 +24,21 @@ const Text = styled.div`
     padding: 5vw;
     font-size: 6vw;
     line-height: 8vw;
-`
+`;
 
 export type FullImageLinkProps = {
-    img: string
-    text: string
-}
+    img: string;
+    text: string;
+    linksTo: string;
+};
 
-const FullImageLink = ({ img, text }: FullImageLinkProps) => {
+const FullImageLink = ({ img, text, linksTo }: FullImageLinkProps) => {
     return (
         <Container>
             <Image src={`assets/${img}`} />
-            <Text>{text}</Text>
+            <Text href={`${linksTo}.html`}>{text}</Text>
         </Container>
-    )
-}
+    );
+};
 
-export default FullImageLink
+export default FullImageLink;

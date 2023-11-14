@@ -1,13 +1,14 @@
-declare const PAGE_ID: string
+declare const PAGE_ID: string;
+
 type PageConfig = {
-    id: string
-    title: string
-    paragraphs: string[]
-    images: string[]
-}
+    id: string;
+    title: string;
+    paragraphs: string[];
+    images: string[];
+};
 
 type Config = {
-    pages: Page[]
-}
+    pages: Page[];
+};
 
-declare const config: Config
+declare const config: Config;

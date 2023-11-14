@@ -1,20 +1,48 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
+import React, { ReactNode, useEffect, useState } from "react";
+import styled from "styled-components";
 
-const Container = styled.div`
-    position: relative;
-`
-const TopRow = styled.div<{ isOpen: boolean }>`
+const Container = styled.div``;
+
+const TopRow = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 5rem;
-`
+    box-shadow: 0px 3px 6px #00000029;
+`;
+
+const MenuPositioner = styled.div.attrs({ id: "MenuPositioner" })`
+    position: relative;
+`;
+
+const Menu = styled.div.attrs({ id: "Menu" })`
+    position: relative;
+    background-color: white;
+    width: 100vw;
+    z-index: 10;
+`;
+
+const MenuContent = styled.div.attrs({ id: "MenuContent" })`
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 1.5rem;
+`;
+
+const MenuItem = styled.a<{ isLast: boolean }>`
+    font-family: "All Round Gothic", sans-serif;
+    color: black;
+    text-decoration: none;
+    ${({ isLast }) => (isLast ? "" : "margin-bottom: 1.25rem;")}
+`;
 
 const Image = styled.img`
     height: 100%;
-`
+`;
 
 const Icon = styled.button`
     font-size: 3rem;
@@ -23,23 +51,56 @@ const Icon = styled.button`
     margin: 0;
     padding: 0;
     margin-right: 1.5rem;
-`
+`;
 
 type HeaderProps = {
-    ids: string[]
-    isOpen: boolean
-    onClick: () => void
-}
+    ids: string[];
+};
 
-const Header = ({ ids, isOpen, onClick }: HeaderProps) => {
+const Header = ({ ids }: HeaderProps) => {
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+    useEffect(() => {
+        const listener = () => {
+            if (window.scrollY > 10 && !isOpen) {
+                setIsOpen(false);
+            }
+        };
+        window.addEventListener("scroll", listener);
+        return () => window.removeEventListener("scroll", listener);
+    }, []);
     return (
         <Container>
-            <TopRow isOpen={isOpen}>
+            <TopRow>
                 <Image src="assets/logos/color-logo-no-text.svg" />
-                <Icon onClick={onClick}>{isOpen ? 'x' : '='}</Icon>
+                <Icon onClick={() => setIsOpen((o) => !o)}>
+                    {isOpen ? "x" : "="}
+                </Icon>
             </TopRow>
+            {isOpen && (
+                <DropDownMenu>
+                    <MenuItem href={`index.html`} isLast={false}>
+                        Home
+                    </MenuItem>
+                    {config.pages.map((page, index) => (
+                        <MenuItem
+                            href={`${page.id}.html`}
+                            isLast={index === config.pages.length - 1}
+                        >
+                            {page.title}
+                        </MenuItem>
+                    ))}
+                </DropDownMenu>
+            )}
         </Container>
-    )
-}
+    );
+};
 
-export default Header
+const DropDownMenu = ({ children }: { children: ReactNode }) => (
+    <MenuPositioner>
+        <Menu>
+            <MenuContent>{children}</MenuContent>
+        </Menu>
+    </MenuPositioner>
+);
+
+export default Header;
