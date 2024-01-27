@@ -7,7 +7,7 @@ const react = {
     target: "web",
     entry: "./src/index.tsx",
     output: {
-        path: path.resolve(__dirname, "docs"),
+        path: path.resolve(__dirname, "public"),
         filename: "index.js",
     },
     module: {
