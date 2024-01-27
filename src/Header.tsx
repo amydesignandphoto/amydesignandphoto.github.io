@@ -1,3 +1,5 @@
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { ReactNode, useEffect, useState } from "react";
 import styled from "styled-components";
 
@@ -44,6 +46,9 @@ const Image = styled.img`
 `;
 
 const Icon = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 3rem;
     background-color: transparent;
     border: 0;
@@ -68,7 +73,11 @@ const Header = () => {
             <TopRow>
                 <Image src="assets/logos/color-logo-no-text.svg" />
                 <Icon onClick={() => setIsOpen((o) => !o)}>
-                    {isOpen ? "x" : "="}
+                    {isOpen ? (
+                        <FontAwesomeIcon icon={faClose} fontSize={"30px"} />
+                    ) : (
+                        <FontAwesomeIcon icon={faBars} fontSize={"30px"} />
+                    )}
                 </Icon>
             </TopRow>
             {isOpen && (
