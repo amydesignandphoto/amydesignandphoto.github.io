@@ -34,7 +34,6 @@ const MenuContent = styled.div.attrs({ id: "MenuContent" })`
 `;
 
 const MenuItem = styled.a<{ isLast: boolean }>`
-    font-family: "All Round Gothic", sans-serif;
     color: black;
     text-decoration: none;
     ${({ isLast }) => (isLast ? "" : "margin-bottom: 1.25rem;")}

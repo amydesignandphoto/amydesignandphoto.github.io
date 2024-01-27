@@ -20,7 +20,7 @@ const Text = styled.a`
     background-color: #002fa7;
     color: white;
     width: 100%;
-    font-family: sans-serif;
+    text-decoration: none;
     padding: 5vw;
     font-size: 6vw;
     line-height: 8vw;

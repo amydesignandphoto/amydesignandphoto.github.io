@@ -12,14 +12,12 @@ const TextContent = styled.div.attrs({ id: "TextContent" })`
 `;
 
 const Title = styled.h1`
-    font-family: Arial, Helvetica, sans-serif;
     color: #002fa7;
     text-align: center;
     margin: 0;
 `;
 
 const Paragraph = styled.p`
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 `;
 
