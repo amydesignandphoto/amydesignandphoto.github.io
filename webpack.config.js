@@ -1,7 +1,10 @@
+const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
+const fs = require("fs");
+
+fs.mkdirSync("./public");
 
 require("./src/generate-pages");
-
 const react = {
     mode: "production",
     target: "web",
@@ -30,6 +33,11 @@ const react = {
             },
         ],
     },
+    plugins: [
+        new CopyPlugin({
+            patterns: [{ from: "assets", to: "assets" }],
+        }),
+    ],
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
     },
