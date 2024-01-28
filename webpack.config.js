@@ -2,7 +2,9 @@ const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
 const fs = require("fs");
 
-fs.mkdirSync("./public");
+if (!fs.existsSync("./public")) {
+    fs.mkdirSync("./public");
+}
 
 require("./src/generate-pages");
 const react = {
