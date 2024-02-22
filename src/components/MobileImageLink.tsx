@@ -26,13 +26,7 @@ const Text = styled.a`
     line-height: 8vw;
 `;
 
-export type FullImageLinkProps = {
-    img: string;
-    text: string;
-    linksTo: string;
-};
-
-const FullImageLink = ({ img, text, linksTo }: FullImageLinkProps) => {
+export const MobileImageLink = ({ img, text, linksTo }: ImageLinkProps) => {
     return (
         <Container>
             <Image src={`assets/${img}`} />
@@ -40,5 +34,3 @@ const FullImageLink = ({ img, text, linksTo }: FullImageLinkProps) => {
         </Container>
     );
 };
-
-export default FullImageLink;

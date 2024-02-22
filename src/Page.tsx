@@ -32,27 +32,27 @@ const Image = styled.img`
 `;
 
 type PageProps = {
-    page: PageConfig;
+  page: PageConfig;
 };
 
 const Page = ({ page }: PageProps) => {
-    return (
-        <PageBase>
-            <TextContent>
-                <Title>{page.title}</Title>
-                <div>
-                    {page.paragraphs.map((par) => (
-                        <Paragraph>{par}</Paragraph>
-                    ))}
-                </div>
-            </TextContent>
-            <div>
-                {page.images.map((i) => (
-                    <Image src={"assets/" + i} />
-                ))}
-            </div>
-        </PageBase>
-    );
+  return (
+    <PageBase>
+      <TextContent>
+        <Title>{page.title}</Title>
+        <div>
+          {page.paragraphs.map((par) => (
+            <Paragraph>{par}</Paragraph>
+          ))}
+        </div>
+      </TextContent>
+      <div>
+        {page.images.map((i) => (
+          <Image src={"assets/" + i} />
+        ))}
+      </div>
+    </PageBase>
+  );
 };
 
 export default Page;

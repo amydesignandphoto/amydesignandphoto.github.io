@@ -1,12 +1,18 @@
-import React from 'react'
-import MainLogos from './components/MainLogos'
-import MainMenuImageLinks from './components/MainMenuImageLinks'
+import React from "react";
+import MainLogos from "./components/MainLogos";
+import MainMenuImageLinks from "./components/MainMenuImageLinks";
+import { useMediaQueryContext } from "./context/MediaQueryContext";
+import { DesktopMainLogos } from "./components/DesktopMainLogos";
 
-const Home = () => (
-    <>
-        <MainLogos />
-        <MainMenuImageLinks />
-    </>
-)
+const Home = () => {
+    const { isDesktop } = useMediaQueryContext();
 
-export default Home
+    return (
+        <>
+            {isDesktop ? <DesktopMainLogos /> : <MainLogos />}
+            <MainMenuImageLinks />
+        </>
+    );
+};
+
+export default Home;

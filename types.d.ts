@@ -28,4 +28,13 @@ type Config = {
     pages: Page[];
 };
 
+type ImageLinkProps = {
+    img: string;
+    text: string;
+    linksTo: string;
+};
+type ChildProps = {
+    children: ReactNode;
+};
+
 declare const config: Config;
