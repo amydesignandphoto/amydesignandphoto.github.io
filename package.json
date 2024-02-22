@@ -7,7 +7,7 @@
         "build": "webpack",
         "build:watch": "webpack --watch",
         "fix": "prettier --write --config ./.prettierrc .",
-        "start": "live-server ./public",
+        "start": "webpack serve",
         "css": "sass --no-source-map ./src/index.scss ./docs/index.css"
     },
     "author": "",
@@ -26,7 +26,8 @@
         "ts-loader": "^9.4.4",
         "typescript": "^5.1.6",
         "webpack": "^5.88.1",
-        "webpack-cli": "^5.1.4"
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.0.2"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.5.1",

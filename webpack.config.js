@@ -40,6 +40,16 @@ const react = {
             patterns: [{ from: "assets", to: "assets" }],
         }),
     ],
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "public"),
+        },
+        client: {
+            overlay: { errors: true, warnings: false, runtimeErrors: true },
+        },
+        compress: true,
+        port: 3000,
+    },
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
     },

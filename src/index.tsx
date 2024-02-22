@@ -6,7 +6,7 @@ import { ContextProviders } from "./context/ContextProviders";
 const root = createRoot(document.getElementById("app")!);
 
 root.render(
-    // <ContextProviders>
-    <App />
-    // </ContextProviders>
+    <ContextProviders>
+        <App />
+    </ContextProviders>
 );
