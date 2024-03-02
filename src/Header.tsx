@@ -61,17 +61,20 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     useEffect(() => {
         const listener = () => {
-            if (window.scrollY > 10 && !isOpen) {
+            if (document.body.scrollHeight > 20 && !isOpen) {
                 setIsOpen(false);
             }
         };
-        window.addEventListener("scroll", listener);
-        return () => window.removeEventListener("scroll", listener);
+        document.body.addEventListener("scroll", listener);
+
+        return () => document.body.removeEventListener("scroll", listener);
     }, []);
     return (
         <Container>
             <TopRow>
-                <Image src="assets/logos/color-logo-no-text.svg" />
+                <a href="/" style={{ height: "100%" }}>
+                    <Image src="assets/logos/color-logo-no-text.svg" />
+                </a>
                 <Icon onClick={() => setIsOpen((o) => !o)}>
                     {isOpen ? (
                         <FontAwesomeIcon icon={faClose} fontSize={"30px"} />
