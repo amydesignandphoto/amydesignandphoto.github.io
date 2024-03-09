@@ -1,6 +1,6 @@
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { ReactNode, useState } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -36,6 +36,15 @@ const MenuContent = styled.div.attrs({ id: "MenuContent" })`
     background-color: white;
     box-shadow: 0px 3px 6px #00000029;
     padding: 1.5rem;
+
+    @media (min-width: 480px) {
+        flex-direction: row;
+        box-sizing: border-box;
+        gap: 25px;
+        justify-content: flex-end;
+        padding: 0;
+        padding-right: 100px;
+    }
 `;
 
 const MenuItem = styled.a<{ isLast: boolean }>`
