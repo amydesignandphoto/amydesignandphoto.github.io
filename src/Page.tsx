@@ -13,6 +13,7 @@ const TextContent = styled.div.attrs({ id: "TextContent" })`
 
 const Title = styled.h1`
     color: #002fa7;
+    text-transform: uppercase;
     text-align: center;
     margin-top: 0;
     margin-bottom: 3rem;
@@ -32,27 +33,27 @@ const Image = styled.img`
 `;
 
 type PageProps = {
-  page: PageConfig;
+    page: PageConfig;
 };
 
 const Page = ({ page }: PageProps) => {
-  return (
-    <PageBase>
-      <TextContent>
-        <Title>{page.title}</Title>
-        <div>
-          {page.paragraphs.map((par) => (
-            <Paragraph>{par}</Paragraph>
-          ))}
-        </div>
-      </TextContent>
-      <div>
-        {page.images.map((i) => (
-          <Image src={"assets/" + i} />
-        ))}
-      </div>
-    </PageBase>
-  );
+    return (
+        <PageBase>
+            <TextContent>
+                <Title>{page.title}</Title>
+                <div>
+                    {page.paragraphs.map((par) => (
+                        <Paragraph>{par}</Paragraph>
+                    ))}
+                </div>
+            </TextContent>
+            <div>
+                {page.images.map((i) => (
+                    <Image src={"assets/" + i} />
+                ))}
+            </div>
+        </PageBase>
+    );
 };
 
 export default Page;

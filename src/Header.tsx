@@ -3,7 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { ReactNode, useEffect, useState } from "react";
 import styled from "styled-components";
 
-const Container = styled.div``;
+const Container = styled.div`
+    position: relative;
+    z-index: 100;
+`;
 
 const TopRow = styled.div`
     display: flex;
@@ -59,16 +62,6 @@ const Icon = styled.button`
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    useEffect(() => {
-        const listener = () => {
-            if (document.body.scrollHeight > 20 && !isOpen) {
-                setIsOpen(false);
-            }
-        };
-        document.body.addEventListener("scroll", listener);
-
-        return () => document.body.removeEventListener("scroll", listener);
-    }, []);
     return (
         <Container>
             <TopRow>

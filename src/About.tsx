@@ -12,6 +12,8 @@ const TextContent = styled.div.attrs({ id: "TextContent" })`
 `;
 
 const Title = styled.h1`
+    font-family: "all-round-gothic", sans-serif;
+    text-transform: uppercase;
     color: #002fa7;
     text-align: center;
     margin: 0;
@@ -53,7 +55,7 @@ const About = () => {
             <TextContent>
                 <Title>About Me</Title>
             </TextContent>
-            <ImageContainer>{<FancyImage />}</ImageContainer>
+            <FancyImage />
             <TextContent>
                 {config.about.paragraphs.map((par) => (
                     <Paragraph>{par}</Paragraph>
@@ -67,11 +69,13 @@ const About = () => {
 
 const FancyImage = () => {
     return (
-        <ImageBoarder>
-            <ImageClip>
-                <Image src={"assets/" + config.about.image} />
-            </ImageClip>
-        </ImageBoarder>
+        <ImageContainer>
+            <ImageBoarder>
+                <ImageClip>
+                    <Image src={"assets/" + config.about.image} />
+                </ImageClip>
+            </ImageBoarder>
+        </ImageContainer>
     );
 };
 

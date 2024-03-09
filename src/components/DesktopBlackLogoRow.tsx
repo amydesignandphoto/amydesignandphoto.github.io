@@ -12,7 +12,7 @@ const Image = styled.img`
 
 type BlackLogoRowProps = {
     offset: number;
-    count?: 1 | 2 | 3 | 4 | 5 | 6;
+    count?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 };
 
 const DesktopBlackLogoRow = ({ offset, count = 1 }: BlackLogoRowProps) => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { useScrollableAnimation } from "../useWithLogos";
+import { useScrollableAnimation } from "../useScrollableAnimation";
 import DesktopBlackLogoRow from "./DesktopBlackLogoRow";
 import styled from "styled-components";
 import DesktopPinkLogoMain from "./DesktopPinkLogoMain";
@@ -12,27 +12,27 @@ const Container = styled.div`
     margin-bottom: 5vw;
 `;
 
-export const DesktopMainLogos = () => {
-    const { vert, width } = useScrollableAnimation();
+export const DesktopMainLogos = ({ vert, width }: AnimationParams) => {
     const centered = width / 2 - 207;
     const vertMul = vert * 1;
     return (
         <Container>
             <DesktopBlackLogoRow
-                offset={centered - cell * 14 + vertMul}
-                count={5}
+                offset={centered - cell * 20 + vertMul}
+                count={7}
             />
-            <DesktopBlackLogoRow offset={centered + cell - vertMul} count={5} />
+            <DesktopBlackLogoRow offset={centered + cell - vertMul} count={7} />
             <DesktopPinkLogoMain />
+            <div style={{ height: "37px" }} />
             <DesktopBlackLogoRow
                 offset={centered + cell * 2 - vertMul}
-                count={5}
+                count={7}
             />
             <DesktopBlackLogoRow
-                offset={centered - cell * 13 + vertMul}
-                count={5}
+                offset={centered - cell * 19 + vertMul}
+                count={7}
             />
-            <DesktopBlackLogoRow offset={centered + cell - vertMul} count={5} />
+            <DesktopBlackLogoRow offset={centered + cell - vertMul} count={7} />
         </Container>
     );
 };

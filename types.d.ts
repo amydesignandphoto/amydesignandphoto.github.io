@@ -37,4 +37,9 @@ type ChildProps = {
     children: ReactNode;
 };
 
+type AnimationParams = {
+    width: number;
+    vert: number;
+};
+
 declare const config: Config;

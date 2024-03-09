@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import BlackLogoRow from "./BlackLogoRow";
 import PinkLogoMain from "./PinkLogoMain";
-import { useScrollableAnimation } from "../useWithLogos";
 
 const Container = styled.div`
     display: flex;
@@ -11,8 +10,7 @@ const Container = styled.div`
     margin-bottom: 5vw;
 `;
 
-const MainLogos = () => {
-    const { vert, width } = useScrollableAnimation();
+const MainLogos = ({ vert, width }: AnimationParams) => {
     return (
         <Container>
             <BlackLogoRow offset={-((width * 5) / 3) + vert} count={2} />

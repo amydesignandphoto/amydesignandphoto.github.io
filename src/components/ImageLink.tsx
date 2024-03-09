@@ -6,15 +6,15 @@ const SUPPORTED_HEIGHT = 1366;
 const Container = styled.div`
     position: relative;
     display: flex;
+    width: 48%;
+    height: 15%;
     flex-direction: column;
     justify-content: space-between;
-    width: 341px;
-    height: 409px;
 `;
 
 const Image = styled.img`
-    width: 341px;
-    height: 409px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 `;
 
