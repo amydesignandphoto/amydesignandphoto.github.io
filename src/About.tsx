@@ -2,6 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import PageBase from "./PageBase";
 import ContactLogo from "./components/ContactLogo";
+import { useMediaQueryContext } from "./context/MediaQueryContext";
+const PageContent = styled.div.attrs({ id: "PageContent" })`
+    display: flex;
+    justify-content: center;
+`;
 
 const TextContent = styled.div.attrs({ id: "TextContent" })`
     margin: 1.5rem;
@@ -28,6 +33,13 @@ const ImageContainer = styled.div`
     justify-content: center;
 `;
 
+const DesktopImageClip = styled.div`
+    width: 365px;
+    height: 365px;
+    overflow: clip;
+    border-radius: 1000px;
+    border: 0.75rem solid #002fa7;
+`;
 const ImageClip = styled.div`
     width: 70vw;
     height: 70vw;
@@ -49,7 +61,35 @@ const ImageBoarder = styled.div`
     border: 0.75rem solid #ff0d70;
 `;
 
+const DesktopContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding-top: 185px;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+`;
+
 const About = () => {
+    const { isTabletOrLarger } = useMediaQueryContext();
+    if (isTabletOrLarger)
+        return (
+            <PageBase>
+                <PageContent>
+                    <DesktopContainer>
+                        <DesktopFancyImage />
+                        <TextContent>
+                            <Title>About Me</Title>
+                            {config.about.paragraphs.map((par) => (
+                                <Paragraph>{par}</Paragraph>
+                            ))}
+                            <ContactLogo />
+                            <Paragraph>amy.designandphoto@gmail.com</Paragraph>
+                        </TextContent>
+                    </DesktopContainer>
+                </PageContent>
+            </PageBase>
+        );
     return (
         <PageBase>
             <TextContent>
@@ -64,6 +104,18 @@ const About = () => {
                 <Paragraph>amy.designandphoto@gmail.com</Paragraph>
             </TextContent>
         </PageBase>
+    );
+};
+
+const DesktopFancyImage = () => {
+    return (
+        <div>
+            <ImageBoarder>
+                <DesktopImageClip>
+                    <Image src={"assets/" + config.about.image} />
+                </DesktopImageClip>
+            </ImageBoarder>
+        </div>
     );
 };
 
