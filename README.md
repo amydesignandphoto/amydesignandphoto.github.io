@@ -1,7 +1,5 @@
 # amydesignandphot.github.io
 
-make edits
+Gotchas:
 
-run `npm run build`
-
-push
+Commas are used to separate items in JSON. You will not need a comma on the last line of any object or array.
