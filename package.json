@@ -7,7 +7,7 @@
         "build": "webpack",
         "build:watch": "webpack --watch",
         "fix": "prettier --write --config ./.prettierrc .",
-        "start": "live-server ./docs/",
+        "start": "webpack serve",
         "css": "sass --no-source-map ./src/index.scss ./docs/index.css"
     },
     "author": "",
@@ -15,6 +15,7 @@
     "devDependencies": {
         "@types/react": "^18.2.14",
         "@types/react-dom": "^18.2.6",
+        "copy-webpack-plugin": "^12.0.2",
         "css-loader": "^6.8.1",
         "prettier": "^3.0.0",
         "react": "^18.2.0",
@@ -25,12 +26,14 @@
         "ts-loader": "^9.4.4",
         "typescript": "^5.1.6",
         "webpack": "^5.88.1",
-        "webpack-cli": "^5.1.4"
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.0.2"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.5.1",
         "@fortawesome/free-solid-svg-icons": "^6.5.1",
         "@fortawesome/react-fontawesome": "^0.2.0",
+        "react-responsive": "^9.0.2",
         "styled-components": "^6.0.7"
     }
 }

@@ -18,11 +18,6 @@
                 "linksTo": "bob"
             },
             {
-                "img": "tom-proctor/tom1.jpg",
-                "text": "TOM PROCTOR",
-                "linksTo": "tom-proctor"
-            },
-            {
                 "img": "demeter/stack.png",
                 "text": "HOUSE OF DEMETER",
                 "linksTo": ""
@@ -37,13 +32,21 @@
                 "text": "POPCORN LIST",
                 "linksTo": ""
             },
-            { "img": "tron/bike.png", "text": "TRON VIDEO", "linksTo": "" },
+            {
+                "img": "tron/bike.png",
+                "text": "TRON VIDEO",
+                "linksTo": ""
+            },
             {
                 "img": "bipolar-journey/manic.png",
                 "text": "BIPOLAR JOURNEY",
                 "linksTo": ""
             },
-            { "img": "kitambaa/logo.jpg", "text": "KITAMBAA", "linksTo": "" },
+            {
+                "img": "kitambaa/logo.jpg",
+                "text": "KITAMBAA",
+                "linksTo": ""
+            },
             {
                 "img": "uvu/stage.jpg",
                 "text": "UVU DATA SUMMIT 2021",

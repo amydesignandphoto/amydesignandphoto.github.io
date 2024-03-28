@@ -13,6 +13,7 @@ const TextContent = styled.div.attrs({ id: "TextContent" })`
 
 const Title = styled.h1`
     color: #002fa7;
+    text-transform: uppercase;
     text-align: center;
     margin-top: 0;
     margin-bottom: 3rem;

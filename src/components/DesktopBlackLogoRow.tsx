@@ -7,15 +7,15 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-    width: 100vw;
+    height: 138px;
 `;
 
 type BlackLogoRowProps = {
     offset: number;
-    count?: 1 | 2 | 3 | 4 | 5 | 6;
+    count?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 };
 
-const BlackLogoRow = ({ offset, count = 1 }: BlackLogoRowProps) => {
+const DesktopBlackLogoRow = ({ offset, count = 1 }: BlackLogoRowProps) => {
     return (
         <Container style={{ left: `${offset}px` }}>
             {new Array(count).fill(
@@ -25,4 +25,4 @@ const BlackLogoRow = ({ offset, count = 1 }: BlackLogoRowProps) => {
     );
 };
 
-export default BlackLogoRow;
+export default DesktopBlackLogoRow;

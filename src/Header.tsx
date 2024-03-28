@@ -1,28 +1,35 @@
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { ReactNode, useState } from "react";
 import styled from "styled-components";
 
-const Container = styled.div``;
+const Container = styled.div`
+    position: relative;
+    z-index: 100;
+`;
 
-const TopRow = styled.div`
+const TopRow = styled.div<{ isOpen: boolean }>`
+    position: relative;
     display: flex;
+    background-color: white;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 5rem;
-    box-shadow: 0px 3px 6px #00000029;
+    z-index: 12;
+    ${({ isOpen }) => (isOpen ? "" : "box-shadow: 0px 3px 6px #00000029;")};
 `;
 
 const MenuPositioner = styled.div.attrs({ id: "MenuPositioner" })`
+    background-color: white;
     position: relative;
+    z-index: 10;
 `;
 
 const Menu = styled.div.attrs({ id: "Menu" })`
     position: relative;
     background-color: white;
     width: 100vw;
-    z-index: 10;
 `;
 
 const MenuContent = styled.div.attrs({ id: "MenuContent" })`
@@ -33,12 +40,23 @@ const MenuContent = styled.div.attrs({ id: "MenuContent" })`
     background-color: white;
     box-shadow: 0px 3px 6px #00000029;
     padding: 1.5rem;
+
+    @media (min-width: 480px) {
+        flex-direction: row;
+        box-sizing: border-box;
+        gap: 25px;
+        justify-content: flex-end;
+        padding: 20px;
+        padding-bottom: 0;
+    }
 `;
 
 const MenuItem = styled.a<{ isLast: boolean }>`
+    position: relative;
     color: black;
     text-decoration: none;
     ${({ isLast }) => (isLast ? "" : "margin-bottom: 1.25rem;")}
+    z-index: 10;
 `;
 
 const Image = styled.img`
@@ -59,19 +77,12 @@ const Icon = styled.button`
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    useEffect(() => {
-        const listener = () => {
-            if (window.scrollY > 10 && !isOpen) {
-                setIsOpen(false);
-            }
-        };
-        window.addEventListener("scroll", listener);
-        return () => window.removeEventListener("scroll", listener);
-    }, []);
     return (
         <Container>
-            <TopRow>
-                <Image src="assets/logos/color-logo-no-text.svg" />
+            <TopRow isOpen={isOpen}>
+                <a href="/" style={{ height: "100%" }}>
+                    <Image src="assets/logos/color-logo-no-text.svg" />
+                </a>
                 <Icon onClick={() => setIsOpen((o) => !o)}>
                     {isOpen ? (
                         <FontAwesomeIcon icon={faClose} fontSize={"30px"} />

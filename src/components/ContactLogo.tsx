@@ -7,8 +7,18 @@ const Container = styled.span`
     font-size: 4rem;
 `;
 
+const AtSpan = styled.span.attrs({ children: "@" })`
+    font-family: "Alagard";
+`;
+
 const ContactLogo = () => {
-    return <Container>CONT@CT</Container>;
+    return (
+        <Container>
+            CONT
+            <AtSpan />
+            CT
+        </Container>
+    );
 };
 
 export default ContactLogo;

@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const CONFIG_PATH = "./config.json";
 const TEMPLATE_PATH = "./src/template.html";
-const OUTPUT_DIR_PATH = "./docs";
+const OUTPUT_DIR_PATH = "./public";
 const TEMPLATE_REPLACEABLE_STRING = "// GLOBALS";
 
 // read the template file
