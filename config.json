@@ -8,24 +8,19 @@
   "home": {
     "links": [
       {
-        "img": "uvu/banner.jpg",
+        "img": "uvu/SOU_thumbnail_1000x1000.jpeg",
         "text": "UVU STATE OF THE UNIVERSITY 2022",
         "linksTo": "uvu"
       },
       {
-        "img": "kitambaa/cover.jpg",
-        "text": "NEW PAGE",
-        "linksTo": "new-page"
-      },
-      {
-        "img": "tom-proctor/tom1.jpg",
-        "text": "TOM PROCTOR",
+        "img": "tom-proctor/TP_thumbnail_1000x1000.jpg",
+        "text": "TOM PROCTOR BAND",
         "linksTo": "tom-proctor"
       },
       {
-        "img": "demeter/stack.png",
+        "img": "demeter/HouseOfDemeter_thumbnail_1000x1000.jpg",
         "text": "HOUSE OF DEMETER",
-        "linksTo": ""
+        "linksTo": "HouseOfDemeter"
       },
       {
         "img": "blue-synergy/tile.jpg",
@@ -65,17 +60,26 @@
       "title": "uvu state of the university 2022",
       "homeimage": "uvu/banner.jpg",
       "paragraphs": [
-        "i lead the event branding for the 2022 uvu state of the university address by developing the look-and-feel and directing fellow team-members in creating assets for the event. i created many of the assets myself, including the motion graphics for the event, and delegated other assets to others on my team. the look-and-feel for the event was inspired by in incorporates elements from the 80th anniversary campaign launched at the start of the previous semester. ",
-        "photography for this event was done by the uvu marketing photography team."
+        "I art directed the event branding and design for the 2022 UVU State of the University address by developing the look-and-feel and directing fellow team-members in creating assets for the event. I created many of the assets myself, including the motion graphics for the event, and delegated other assets to others on my team. the look-and-feel for the event was inspired by and incorporates elements from the 80th anniversary campaign launched at the start of the previous semester. ",
+        "Photography for this event was done by the UVU photo team."
       ],
       "images": ["uvu/seats.jpg", "uvu/focused-seats.jpg"]
     },
     {
-      "id": "new-page",
-      "title": "New Page",
-      "homeimage": "kitambaa/cover.jpg",
-      "paragraphs": ["text here", "more text"],
-      "images": ["uvu/seats.jpg", "uvu/focused-seats.jpg"]
+      "id": "HouseOfDemeter",
+      "title": "House of Demeter Branding",
+      "homeimage": "demeter/HouseOfDemeter_thumbnail_1000x1000.jpg",
+      "paragraphs": [
+        "House of Demeter is a theoretical Greek and barbecue fusion restaurant. For this project, I designed a logo and expanded brand elements, including a menu, gift card, and envelope shown here."
+      ],
+      "images": [
+        "demeter/HouseOfDemeter_business card mockup_2000x1500.jpg",
+        "demeter/HouseOfDemeter_collage1_2000x750.png",
+        "demeter/HouseOfDemeter_appetizers_2000x1500.jpg",
+        "demeter/HouseOfDemeter_collage2_2000x750.png",
+        "demeter/HouseOfDemeter_finalspread_2000x1500.jpg",
+        "demeter/HouseOfDemeter_elements_2000x1500.jpg"
+      ]
     },
     {
       "id": "tom-proctor",
@@ -84,7 +88,13 @@
       "paragraphs": [
         "I was hired as a contracted photographer and designer for Tom Proctor Band. Tom is a country singer/song-writer and actor. I did a promotional photoshoot for him and expanded his personal brand through the design of his EPK (Electronic Press Kit). I used his existing Tom Proctor logo as inspiration for the design."
       ],
-      "images": ["uvu/seats.jpg", "uvu/focused-seats.jpg"]
+      "images": [
+        "tom-proctor/TomProctor_1_2000x1333.jpg",
+        "tom-proctor/TomProctor_collage1_2000x1500.jpg",
+        "tom-proctor/TomProctor_2_2000x1333.jpg",
+        "tom-proctor/TomProctor_collage2_2000x1500.jpg",
+        "tom-proctor/TomProctor_3_2000x1333.jpg"
+      ]
     }
   ]
 }
