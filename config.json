@@ -90,17 +90,17 @@
     {
       "id": "BlueSynergy",
       "title": "Blue Synergy Brand Guide",
-      "homeimage": "assets/blue-synergy/BlueSynergy_thumbnail_1000x1000.jpg",
+      "homeimage": "blue-synergy/BlueSynergy_thumbnail_1000x1000.jpg",
       "paragraphs": [
         "Blue Synergy is a software development company. I was hired as a contracted designer to create a brand identity and light brand guide. "
       ],
       "images": [
-        "assets/blue-synergy/BlueSyngergy_cover.jpg",
-        "assets/blue-synergy/BlueSynergy_pg1.jpg",
-        "assets/blue-synergy/BlueSynergy_pg2.jpg",
-        "assets/blue-synergy/BlueSynergy_pg3.jpg",
-        "assets/blue-synergy/BlueSynergy_pg4.jpg",
-        "assets/blue-synergy/BlueSynergy_pg5.jpg"
+        "blue-synergy/BlueSyngergy_cover.jpg",
+        "blue-synergy/BlueSynergy_pg1.jpg",
+        "blue-synergy/BlueSynergy_pg2.jpg",
+        "blue-synergy/BlueSynergy_pg3.jpg",
+        "blue-synergy/BlueSynergy_pg4.jpg",
+        "blue-synergy/BlueSynergy_pg5.jpg"
       ]
     },
     {
@@ -112,11 +112,11 @@
         "Try the prototype here: tinyurl.com/popcornlists"
       ],
       "images": [
-        "assets/popcorn-list/PopcornLists_mockup_2000x1118.jpg",
-        "assets/popcorn-list/PopcornLists_slide1.jpg",
-        "assets/popcorn-list/PopcornLists_slide3.jpg",
-        "assets/popcorn-list/PopcornLists_slide4.jpg",
-        "assets/popcorn-list/PopcornLists_slide5.jpg"
+        "popcorn-list/PopcornLists_mockup_2000x1118.jpg",
+        "popcorn-list/PopcornLists_slide1.jpg",
+        "popcorn-list/PopcornLists_slide3.jpg",
+        "popcorn-list/PopcornLists_slide4.jpg",
+        "popcorn-list/PopcornLists_slide5.jpg"
       ]
     },
     {
