@@ -28,9 +28,9 @@
         "linksTo": ""
       },
       {
-        "img": "popcorn-list/login.png",
+        "img": "popcorn-list/PopcornLists_thumbnail_1000x1000.jpg",
         "text": "POPCORN LIST",
-        "linksTo": ""
+        "linksTo": "PopcornLists"
       },
       {
         "img": "tron/bike.png",
@@ -101,6 +101,22 @@
         "assets/blue-synergy/BlueSynergy_pg3.jpg",
         "assets/blue-synergy/BlueSynergy_pg4.jpg",
         "assets/blue-synergy/BlueSynergy_pg5.jpg"
+      ]
+    },
+    {
+      "id": "PopcornLists",
+      "title": "Popcorn Lists App",
+      "homeimage": "popcorn-list/PopcornLists_thumbnail_1000x1000.jpg",
+      "paragraphs": [
+        "Popcorn Lists is a hypothetical app that helps you organize your entire movie library in one place by syncing all of your streaming services. Users can also make collaborative watch lists and share their personal movie reviews with friends.",
+        "Try the prototype here: tinyurl.com/popcornlists"
+      ],
+      "images": [
+        "assets/popcorn-list/PopcornLists_mockup_2000x1118.jpg",
+        "assets/popcorn-list/PopcornLists_slide1.jpg",
+        "assets/popcorn-list/PopcornLists_slide3.jpg",
+        "assets/popcorn-list/PopcornLists_slide4.jpg",
+        "assets/popcorn-list/PopcornLists_slide5.jpg"
       ]
     },
     {
