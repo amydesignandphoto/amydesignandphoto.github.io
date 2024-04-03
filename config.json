@@ -23,7 +23,7 @@
         "linksTo": "HouseOfDemeter"
       },
       {
-        "img": "blue-synergy/tile.jpg",
+        "img": "blue-synergy/BlueSynergy_thumbnail_1000x1000.jpg",
         "text": "BLUE SYNERGY",
         "linksTo": ""
       },
@@ -76,7 +76,7 @@
       "title": "House of Demeter Branding",
       "homeimage": "demeter/HouseOfDemeter_thumbnail_1000x1000.jpg",
       "paragraphs": [
-        "House of Demeter is a theoretical Greek and barbecue fusion restaurant. For this project, I designed a logo and expanded brand elements, including a menu, gift card, and envelope shown here."
+        "House of Demeter is a hypothetical Greek and barbecue fusion restaurant. For this project, I designed a logo and expanded brand elements, including a menu, gift card, and envelope shown here."
       ],
       "images": [
         "demeter/HouseOfDemeter_business card mockup_2000x1500.jpg",
@@ -85,6 +85,22 @@
         "demeter/HouseOfDemeter_collage2_2000x750.png",
         "demeter/HouseOfDemeter_finalspread_2000x1500.jpg",
         "demeter/HouseOfDemeter_elements_2000x1500.jpg"
+      ]
+    },
+    {
+      "id": "BlueSynergy",
+      "title": "Blue Synergy Brand Guide",
+      "homeimage": "assets/blue-synergy/BlueSynergy_thumbnail_1000x1000.jpg",
+      "paragraphs": [
+        "Blue Synergy is a software development company. I was hired as a contracted designer to create a brand identity and light brand guide. "
+      ],
+      "images": [
+        "assets/blue-synergy/BlueSyngergy_cover.jpg",
+        "assets/blue-synergy/BlueSynergy_pg1.jpg",
+        "assets/blue-synergy/BlueSynergy_pg2.jpg",
+        "assets/blue-synergy/BlueSynergy_pg3.jpg",
+        "assets/blue-synergy/BlueSynergy_pg4.jpg",
+        "assets/blue-synergy/BlueSynergy_pg5.jpg"
       ]
     },
     {
