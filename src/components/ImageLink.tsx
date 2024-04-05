@@ -10,18 +10,12 @@ const Container = styled.a`
   height: 15%;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #002fa7;
-  &:hover {
-    background-color: #ff0d70;
-  }
-  cursor: pointer;
 `;
 
 const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  cursor: pointer;
 `;
 
 const TextContainer = styled.div`
@@ -30,14 +24,16 @@ const TextContainer = styled.div`
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
-  cursor: pointer;
+  background-color: #002fa7;
+  &:hover {
+    background-color: #ff0d70;
+  }
 `;
 
 const Text = styled.div`
   color: white;
   text-decoration: none;
   font-size: 28px;
-  cursor: pointer;
 `;
 
 export const ImageLink = ({ linksTo, img, text }: ImageLinkProps) => {
