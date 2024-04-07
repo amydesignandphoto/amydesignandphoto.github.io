@@ -1,33 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 
-const SUPPORTED_HEIGHT = 1366;
-
 const Container = styled.a`
-  position: relative;
   display: flex;
-  width: 48%;
-  height: 15%;
   flex-direction: column;
-  justify-content: space-between;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;
-
-const TextContainer = styled.div`
-  position: absolute;
-  bottom: 0;
-  box-sizing: border-box;
-  padding: 20px;
-  width: 100%;
   background-color: #002fa7;
   &:hover {
     background-color: #ff0d70;
   }
+  align-items: stretch;
+  text-decoration: none;
+  min-width: 384px;
+  width: 48%;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+`;
+
+const TextContainer = styled.div`
+  box-sizing: border-box;
+  padding: 20px;
 `;
 
 const Text = styled.div`
