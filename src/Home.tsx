@@ -7,19 +7,19 @@ import HomePageHeader from "./components/HomePageHeader";
 import { useScrollableAnimation } from "./useScrollableAnimation";
 
 const Home = () => {
-    const { isDesktop } = useMediaQueryContext();
-    const animationParams = useScrollableAnimation();
-    return (
-        <>
-            <HomePageHeader {...animationParams} />
-            {isDesktop ? (
-                <DesktopMainLogos {...animationParams} />
-            ) : (
-                <MainLogos {...animationParams} />
-            )}
-            <MainMenuImageLinks />
-        </>
-    );
+  const { isDesktop } = useMediaQueryContext();
+  const animationParams = useScrollableAnimation();
+  return (
+    <>
+      <HomePageHeader {...animationParams} />
+      {isDesktop ? (
+        <DesktopMainLogos {...animationParams} />
+      ) : (
+        <MainLogos {...animationParams} />
+      )}
+      <MainMenuImageLinks />
+    </>
+  );
 };
 
 export default Home;
