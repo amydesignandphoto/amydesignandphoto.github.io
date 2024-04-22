@@ -33,8 +33,8 @@
         "linksTo": "PopcornLists"
       },
       {
-        "img": "tron/bike.png",
-        "text": "TRON VIDEO",
+        "img": "Warren'sTail/Warren'sTail.png",
+        "text": "WARREN'S TAIL SHORT FILM",
         "linksTo": ""
       },
       {
@@ -91,6 +91,22 @@
       "id": "BlueSynergy",
       "title": "Blue Synergy Brand Guide",
       "homeimage": "blue-synergy/BlueSynergy_thumbnail_1000x1000.jpg",
+      "paragraphs": [
+        "Blue Synergy is a software development company. I was hired as a contracted designer to create a brand identity and light brand guide. "
+      ],
+      "images": [
+        "blue-synergy/BlueSyngergy_cover.jpg",
+        "blue-synergy/BlueSynergy_pg1.jpg",
+        "blue-synergy/BlueSynergy_pg2.jpg",
+        "blue-synergy/BlueSynergy_pg3.jpg",
+        "blue-synergy/BlueSynergy_pg4.jpg",
+        "blue-synergy/BlueSynergy_pg5.jpg"
+      ]
+    },
+    {
+      "id": "Warren'sTail",
+      "title": "Warren's Tail Short Film",
+      "homeimage": "assets/Warren'sTail/Warren'sTail-cropped.png",
       "paragraphs": [
         "Blue Synergy is a software development company. I was hired as a contracted designer to create a brand identity and light brand guide. "
       ],
