@@ -45,7 +45,7 @@
       {
         "img": "kitambaa/logo.jpg",
         "text": "KITAMBAA",
-        "linksTo": ""
+        "linksTo": "Kitambaa"
       },
       {
         "img": "uvu/stage.jpg",
@@ -154,6 +154,20 @@
     },
     {
       "id": "BipolarJourney",
+      "title": "Bipolar Journey Poster Series",
+      "homeImage": "bipolar-journey/BipolarJOurney-thumbnail.jpg",
+      "paragraphs": [
+        "​​​​​​​For this project, I created a 3-poster series that conveys 3 states experienced by a person with Bipolar Disorder: mania, depression, and stable."
+      ],
+      "images": [
+        "bipolar-journey/OIH6ZL1.png",
+        "assets/bipolar-journey/BipolarJourney1-manic.png",
+        "assets/bipolar-journey/BipolarJourney2-depressed.png",
+        "assets/bipolar-journey/BipolarJourney3-stable.png"
+      ]
+    },
+    {
+      "id": "Kitambaa",
       "title": "Bipolar Journey Poster Series",
       "homeImage": "bipolar-journey/BipolarJOurney-thumbnail.jpg",
       "paragraphs": [
