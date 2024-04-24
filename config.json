@@ -43,7 +43,7 @@
         "linksTo": "BipolarJourney"
       },
       {
-        "img": "kitambaa/logo.jpg",
+        "img": "kitambaa/kitambaa-mockup1.jpg",
         "text": "KITAMBAA",
         "linksTo": "Kitambaa"
       },
@@ -175,17 +175,12 @@
     },
     {
       "id": "Kitambaa",
-      "title": "Bipolar Journey Poster Series",
-      "homeImage": "bipolar-journey/BipolarJOurney-thumbnail.jpg",
+      "title": "Kitambaa Clothing Brand",
+      "homeImage": "kitambaa/kitambaa-mockup1.jpg",
       "paragraphs": [
-        "​​​​​​​For this project, I created a 3-poster series that conveys 3 states experienced by a person with Bipolar Disorder: mania, depression, and stable."
+        "​​​​​​​Kitambaa is a hypothetical company that partners with high-fashion labels by providing them authentic African textiles. For this project, I developed all of the logos, colors, messaging, and photography style for the brand and compiled them in the brand guide displayed below."
       ],
-      "images": [
-        "bipolar-journey/OIH6ZL1.png",
-        "bipolar-journey/BipolarJourney1-manic.png",
-        "bipolar-journey/BipolarJourney2-depressed.png",
-        "bipolar-journey/BipolarJourney3-stable.png"
-      ]
+      "images": ["kitambaa/Kitambaa-brandguide.png"]
     }
   ]
 }
