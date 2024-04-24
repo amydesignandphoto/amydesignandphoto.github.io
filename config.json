@@ -38,8 +38,8 @@
         "linksTo": "WarrensTail"
       },
       {
-        "img": "bipolar-journey/manic.png",
-        "text": "BIPOLAR JOURNEY",
+        "img": "bipolar-journey/BipolarJOurney-thumbnail.jpg",
+        "text": "BIPOLAR JOURNEY POSTER SERIES",
         "linksTo": "BipolarJourney"
       },
       {
@@ -154,17 +154,16 @@
     },
     {
       "id": "BipolarJourney",
-      "title": "Tom Proctor",
-      "homeImage": "tom-proctor/tom1.jpg",
+      "title": "Bipolar Journey Poster Series",
+      "homeImage": "bipolar-journey/BipolarJOurney-thumbnail.jpg",
       "paragraphs": [
-        "I was hired as a contracted photographer and designer for Tom Proctor Band. Tom is a country singer/song-writer and actor. I did a promotional photoshoot for him and expanded his personal brand through the design of his EPK (Electronic Press Kit). I used his existing Tom Proctor logo as inspiration for the design."
+        "​​​​​​​For this project, I created a 3-poster series that conveys 3 states experienced by a person with Bipolar Disorder: mania, depression, and stable."
       ],
       "images": [
-        "tom-proctor/TomProctor_1_2000x1333.jpg",
-        "tom-proctor/TomProctor_collage1_2000x1500.jpg",
-        "tom-proctor/TomProctor_2_2000x1333.jpg",
-        "tom-proctor/TomProctor_collage2_2000x1500.jpg",
-        "tom-proctor/TomProctor_3_2000x1333.jpg"
+        "bipolar-journey/OIH6ZL1.png",
+        "assets/bipolar-journey/BipolarJourney1-manic.png",
+        "assets/bipolar-journey/BipolarJourney2-depressed.png",
+        "assets/bipolar-journey/BipolarJourney3-stable.png"
       ]
     }
   ]
