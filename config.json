@@ -25,7 +25,7 @@
       {
         "img": "blue-synergy/BlueSynergy_thumbnail_1000x1000.jpg",
         "text": "BLUE SYNERGY",
-        "linksTo": ""
+        "linksTo": "BlueSynergy"
       },
       {
         "img": "popcorn-list/PopcornLists_thumbnail_1000x1000.jpg",
@@ -35,7 +35,7 @@
       {
         "img": "Warren'sTail/Warren'sTail.png",
         "text": "WARREN'S TAIL SHORT FILM",
-        "linksTo": "Warren'sTail"
+        "linksTo": "WarrensTail"
       },
       {
         "img": "bipolar-journey/manic.png",
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "id": "Warren'sTail",
+      "id": "WarrensTail",
       "title": "Warren's Tail Short Film",
       "homeimage": "assets/Warren'sTail/Warren'sTail-cropped.png",
       "paragraphs": [
